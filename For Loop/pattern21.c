@@ -1,38 +1,82 @@
+// #include <stdio.h>
+// #include <stdbool.h>
+
+// void main()
+// {
+//     int i = 1, j, k = 5;
+//     bool reversed = false;
+//     while (i > 0)
+//     {
+//         int cnt = 1;
+
+//         for (j = 1; j <= k; j++)
+//         {
+//             if (j <= k - i)
+//             {
+//                 printf(" ");
+//             }
+//             else
+//             {
+//                 if (reversed == true)
+//                 {
+//                     cnt = j;
+//                 }
+
+//                 printf("%d", cnt);
+//                 cnt++;
+//             }
+//         }
+//         if (i < 5 && reversed == false)
+//         {
+//             i++;
+//         }
+//         else
+//         {
+//             reversed = true;
+//             i--;
+//         }
+//         printf("\n");
+//     }
+// }
+
+//second logic 
+
 #include <stdio.h>
-#include <stdbool.h>
+#include<stdbool.h>
 
 void main()
 {
-    int i = 1, j, k = 5;
-    bool reversed = false;
-    while (i > 0)
+    bool reverse=false;
+    int i = 1;
+    while(i>0)
     {
         int cnt = 1;
-
-        for (j = 1; j <= k; j++)
+        for(int j = 5; j>=1; j--)
         {
-            if (j <= k - i)
+            if(j>i)
             {
                 printf(" ");
             }
             else
             {
-                if (reversed == true)
+                printf("%d",cnt);
+                if(reverse==false)
                 {
-                    cnt = j;
+                cnt++;
                 }
-
-                printf("%d", cnt);
+            }
+            if(reverse==true)
+            {
                 cnt++;
             }
         }
-        if (i < 5 && reversed == false)
+        if(i<5 && reverse==false)
         {
             i++;
         }
         else
         {
-            reversed = true;
+            reverse=true;
             i--;
         }
         printf("\n");
