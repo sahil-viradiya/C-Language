@@ -21,6 +21,7 @@ void main()
     gets(ch);
 
     length = strlen(ch);
+    // printf("\nlength is :%d",length);
 
     for (int i = length; i >= 0; i--)
     {
