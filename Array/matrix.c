@@ -24,6 +24,7 @@ void main()
         }
         printf("\n");
     }
+    //dioagnal Matrix
     printf("Sum of dioagnal elements :");
     for (i = 0; i < m; i++)
     {
