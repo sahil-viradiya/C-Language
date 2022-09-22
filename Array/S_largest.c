@@ -30,37 +30,35 @@
 //         }
 //     }
 
-//        printf("\n large :%d \n second large %d", large, second_large);
-}
+//     printf("\n large :%d \n second large %d", large, second_large);
+// }
 
-//SECOND LOGIC
+// SECOND LOGIC
 
 #include <stdio.h>
 
 int main()
 {
-   int a[50]={1,3,5,23,56,76,90};
-   int i,large=0,second_large=0;
-   
-   
-   
-   for(i=0; i<=6; i++)
-   {
-      if(large<a[i])
-      {
-           large=a[i];
-      }
-   }
-   printf(" large %d",large);
+    int a[50] = {1, 3, 5, 23, 56, 76, 90};
+    int i, large = 0, second_large = 0;
 
-    for(i=0; i<=6; i++)
-   {
-      if(second_large<a[i] && large!=a[i])
-      {
-          second_large=a[i];
-      }
-   }
-   
-   printf("\nsecond_large is : %d",second_large);
+    for (i = 0; i <= 6; i++)
+    {
+        if (large < a[i])
+        {
+            large = a[i];
+        }
+    }
+    printf(" large %d", large);
+
+    for (i = 0; i <= 6; i++)
+    {
+        if (second_large < a[i] && large != a[i])
+        {
+            second_large = a[i];
+        }
+    }
+
+    printf("\nsecond_large is : %d", second_large);
     return 0;
 }
