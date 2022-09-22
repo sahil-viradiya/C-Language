@@ -18,7 +18,7 @@ void main()
     printf("Enter String :");
     gets(ch);
 
-    for (i = 0; ch[i] != '\0'; i++);
+    for (i = 0; ch[i]!='\0'; i++);
     {
         printf(" Length of String : %d", i);
     }
