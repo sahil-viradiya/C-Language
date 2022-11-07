@@ -1,14 +1,4 @@
-// #include<stdio.h>
-// void add(int a){
-//     printf("%d \n",a);
-//     if(a<10){
-//         return add(a+1); //add(2)
-//     }
-// }
-// void main(){
-//     int i=1;
-//     add(i);
-// }
+
 #include<stdio.h>
 int sum=0;
 void array1(int array[],int pos,int size_array)

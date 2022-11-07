@@ -1,4 +1,4 @@
-#include<stdio.h>
+#include <stdio.h>
 // void multi(int a,int b);
 // void add(int a,int b)
 // {
@@ -21,15 +21,16 @@
 //     add(a,b);
 // }
 
-
-
-void add(int a){
-    printf("%d \n",a);
-    if(a<10){
-        return add(a+1); //add(2)
+void add(int a)
+{
+    printf("%d \n", a);
+    if (a < 10)
+    {
+        return add(a + 1); // add(2)
     }
 }
-void main(){
-    int i=1;
+void main()
+{
+    int i = 1;
     add(i);
 }
